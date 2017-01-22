@@ -4,7 +4,7 @@
   include 'simple_html_dom.php';
 
   $link=$_REQUEST['disc1'];
-  $html=file_get_html($link);
+  $html=file_get_html($link."/notas");
   $nrow_1=0;
   $i=0;
   $j=0;
@@ -29,7 +29,7 @@
   }
 
   $link=$_REQUEST['disc2'];
-  $html=file_get_html($link);
+  $html=file_get_html($link."/notas");
   $nrow_2=0;
   $i=0;
   $j=0;
